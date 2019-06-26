@@ -1,12 +1,12 @@
 <% case @operation
-when "add"
-  @symbol= +
-when 'subtract'
-  @symbol= -
-when 'multiply'
-  @symbol= *
-when 'divide'
-  @symbol= /
-end %>
+when "add"%>
+  <%="#{@num1+@num2}"%>
+<%when 'subtract'%>
+  <%="#{@num1-@num2}"%>
+<%when 'multiply'%>
+  <%="#{@num1*@num2}"%>
+<%when 'divide'%>
+  <%="#{@num1/@num2}"%> 
+<%end %>
 
-<%= @num1 @symbol @num2 %>
+
