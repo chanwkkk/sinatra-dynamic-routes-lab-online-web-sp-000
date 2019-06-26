@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @num=params[:number].to_i
     @phrase=params[:phrase]
 
-    erb: phrase
+    erb :phrase
   end
 
 end
