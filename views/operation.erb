@@ -1,10 +1,14 @@
 <% case @operation
 when "add"
-  +
+  @symbol= +
 when 'subtract'
-  -
+  @symbol= -
 when 'multiply'
-  *
+  @symbol= *
 when 'divide'
-  /
+  @symbol= /
 end %>
+
+<%= @num1 @symbol @num2 %>
+
+
